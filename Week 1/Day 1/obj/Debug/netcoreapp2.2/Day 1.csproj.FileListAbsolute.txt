@@ -1,0 +1,11 @@
+/home/natrng/Inst/Demo/C# Nov 19/Week 1/Day 1/bin/Debug/netcoreapp2.2/Day 1.deps.json
+/home/natrng/Inst/Demo/C# Nov 19/Week 1/Day 1/bin/Debug/netcoreapp2.2/Day 1.runtimeconfig.json
+/home/natrng/Inst/Demo/C# Nov 19/Week 1/Day 1/bin/Debug/netcoreapp2.2/Day 1.runtimeconfig.dev.json
+/home/natrng/Inst/Demo/C# Nov 19/Week 1/Day 1/bin/Debug/netcoreapp2.2/Day 1.dll
+/home/natrng/Inst/Demo/C# Nov 19/Week 1/Day 1/bin/Debug/netcoreapp2.2/Day 1.pdb
+/home/natrng/Inst/Demo/C# Nov 19/Week 1/Day 1/obj/Debug/netcoreapp2.2/Day 1.csprojAssemblyReference.cache
+/home/natrng/Inst/Demo/C# Nov 19/Week 1/Day 1/obj/Debug/netcoreapp2.2/Day 1.csproj.CoreCompileInputs.cache
+/home/natrng/Inst/Demo/C# Nov 19/Week 1/Day 1/obj/Debug/netcoreapp2.2/Day 1.AssemblyInfoInputs.cache
+/home/natrng/Inst/Demo/C# Nov 19/Week 1/Day 1/obj/Debug/netcoreapp2.2/Day 1.AssemblyInfo.cs
+/home/natrng/Inst/Demo/C# Nov 19/Week 1/Day 1/obj/Debug/netcoreapp2.2/Day 1.dll
+/home/natrng/Inst/Demo/C# Nov 19/Week 1/Day 1/obj/Debug/netcoreapp2.2/Day 1.pdb
