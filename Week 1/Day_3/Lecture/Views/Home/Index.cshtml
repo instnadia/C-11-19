@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Quote
+
+<form action="newQuote" method="post">
+    <label for="quote">Enter Quote:
+        <input type="text" name="quote">
+    </label>
+    <label for="who">By who:
+        <input type="text" name="who">
+    </label>
+    <button>Enter</button>
+</form>

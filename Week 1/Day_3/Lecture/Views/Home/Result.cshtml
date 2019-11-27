@@ -1,0 +1,6 @@
+@model List<Quote>
+<ul>
+@foreach(var quote in ViewBag.allQuote){
+    <li>@quote.quote , said by @quote.who</li>
+}
+</ul>
