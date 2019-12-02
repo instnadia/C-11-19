@@ -1,0 +1,7 @@
+@model List<Dictionary<string, object>>
+
+<ul>
+@foreach(var user in Model){
+    <li>@user["fName"] @user["lName"]</li>
+}
+</ul>
