@@ -1,0 +1,11 @@
+C:\Users\naadi\Documents\C-11-19\Week 2\Day_2\Lecture\bin\Debug\netcoreapp2.2\Lecture.deps.json
+C:\Users\naadi\Documents\C-11-19\Week 2\Day_2\Lecture\bin\Debug\netcoreapp2.2\Lecture.runtimeconfig.json
+C:\Users\naadi\Documents\C-11-19\Week 2\Day_2\Lecture\bin\Debug\netcoreapp2.2\Lecture.runtimeconfig.dev.json
+C:\Users\naadi\Documents\C-11-19\Week 2\Day_2\Lecture\bin\Debug\netcoreapp2.2\Lecture.dll
+C:\Users\naadi\Documents\C-11-19\Week 2\Day_2\Lecture\bin\Debug\netcoreapp2.2\Lecture.pdb
+C:\Users\naadi\Documents\C-11-19\Week 2\Day_2\Lecture\obj\Debug\netcoreapp2.2\Lecture.csprojAssemblyReference.cache
+C:\Users\naadi\Documents\C-11-19\Week 2\Day_2\Lecture\obj\Debug\netcoreapp2.2\Lecture.csproj.CoreCompileInputs.cache
+C:\Users\naadi\Documents\C-11-19\Week 2\Day_2\Lecture\obj\Debug\netcoreapp2.2\Lecture.AssemblyInfoInputs.cache
+C:\Users\naadi\Documents\C-11-19\Week 2\Day_2\Lecture\obj\Debug\netcoreapp2.2\Lecture.AssemblyInfo.cs
+C:\Users\naadi\Documents\C-11-19\Week 2\Day_2\Lecture\obj\Debug\netcoreapp2.2\Lecture.dll
+C:\Users\naadi\Documents\C-11-19\Week 2\Day_2\Lecture\obj\Debug\netcoreapp2.2\Lecture.pdb
