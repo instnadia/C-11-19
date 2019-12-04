@@ -1,0 +1,24 @@
+﻿@model List<Trail>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td scope="col">Trail Name</td>
+            <td scope="col">Trail Length</td>
+            <td scope="col">Description</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var trail in Model){
+        <tr>
+            <td><a href="trail/@trail.TrailId">@trail.Name</a></td>
+            <td>@trail.length</td>
+            <td>@trail.Description</td>
+        </tr>
+        }
+        
+    </tbody>
+</table>
+
+
+<a asp-action="NewTrail">Add new trail!</a>
