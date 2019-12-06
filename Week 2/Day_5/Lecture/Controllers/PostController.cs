@@ -51,6 +51,9 @@ namespace Lecture
         }
         [HttpGet("Post/edit/{pId}")]
         public IActionResult edit(int pId){
+            if(HttpContext.Session.GetInt32("userId")==null){
+                return RedirectToAction("Index","Home");
+            }
             Post postToEdit = DbContext.Posts.FirstOrDefault(post => post.PostId==pId);
             return View(postToEdit);
         }
