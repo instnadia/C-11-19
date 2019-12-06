@@ -1,0 +1,27 @@
+@model Post
+<a href="logout">logout</a>
+
+<form asp-controller="Post" asp-action="newPost" method="Post">
+    <div class="form-group">
+        <span class="text-danger font-weight-bold" asp-validation-for="Content"></span>
+        <label asp-for="Content"></label>
+        <textarea class="form-control" asp-for="Content"></textarea>
+        <button class="btn btn-info">Submit!</button>
+    </div>
+</form>
+
+@foreach(var post in ViewBag.allPosts){
+    <div class="card">
+        <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">@post.UserPosted.FirstName @post.UserPosted.LastName said:</h6>
+            <p class="card-text">@post.Content</p>
+            <p class="text-muted">Posted on: @post.CreatedAt</p>
+            @if(post.UserPosted.UserId==HttpContextAccessor.HttpContext.Session.GetInt32("userId")){
+                <form mathod="post" asp-action="delete" asp-controller="Post" asp-route-pId="@post.PostId">
+                    <button class="btn btn-outline-warning">Delete</button>
+                </form>
+                <a asp-action="edit" asp-route-pId="@post.PostId" class="btn btn-outline-info">edit</a>
+            }
+        </div>
+    </div>
+}
