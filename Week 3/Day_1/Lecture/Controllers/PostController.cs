@@ -37,7 +37,9 @@ namespace Lecture
                 DbContext.SaveChanges();
                 return RedirectToAction("success");
             }
-            return View("success");
+            MainModel dashboard = new MainModel();
+            dashboard.UsersPost = DbContext.Posts.Include(userposted=>userposted.UserPosted).Include(vote => vote.Votes).ToList();
+            return View("success", dashboard);
         }
         [HttpPost("Post/delete/{pId}")]
         public IActionResult delete(int pId){
@@ -90,7 +92,7 @@ namespace Lecture
                 DbContext.Remove(isVoted);
             }else{
                 isVoted.IsUpvote = vote;
-                DbContext.Update(isVoted);
+                //DbContext.Update(isVoted);
             }
             DbContext.SaveChanges();
             return RedirectToAction("success");
