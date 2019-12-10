@@ -1,0 +1,35 @@
+@model List<Wedding>
+<table>
+  <thead>
+    <th>
+      Wedding:
+    </th>
+    <th>
+      Date:
+    </th>
+    <th>
+      Guest:
+    </th>
+    <th>
+      Action:
+    </th>
+  </thead>
+  <tbody>
+    @foreach(var wedding in Model){
+      <tr>
+        <td>
+          @wedding.WedderOne & @wedding.WedderTwo
+        </td>
+        <td>
+          @wedding.DateOfWedding
+        </td>
+        <td>
+          0
+        </td>
+        <td>
+          RSVP
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>
