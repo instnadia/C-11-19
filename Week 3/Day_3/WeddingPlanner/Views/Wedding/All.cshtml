@@ -1,0 +1,49 @@
+@model List<Wedding>
+<table>
+  <thead>
+    <th>
+      Wedding:
+    </th>
+    <th>
+      Date:
+    </th>
+    <th>
+      Guest:
+    </th>
+    <th>
+      Action:
+    </th>
+  </thead>
+  <tbody>
+    @foreach(var wedding in Model){
+      <tr>
+        <td>
+          <a href="/weddings/@wedding.WeddingId">@wedding.WedderOne & @wedding.WedderTwo</a>
+        </td>
+        <td>
+          @wedding.DateOfWedding
+        </td>
+        <td>
+          @wedding.GuestList.Count
+        </td>
+        <td>
+          @if (wedding.UserId == ViewBag.UserId)
+          {
+            <form asp-contoller="Wedding" asp-action="Delete" asp-route-weddingId="@wedding.WeddingId" method="Post">
+              <button class="btn btn-md btn-primary">Delete</button>
+            </form>
+          }
+          else if(wedding.GuestList.Any(w => w.UserId == ViewBag.UserId)){
+            <form asp-action="Respond" asp-controller="Wedding" method="post" asp-route-WeddingId="@wedding.WeddingId" >
+            <button>UnRSVP</button>
+          </form>
+          }else{
+            <form asp-action="Respond" asp-controller="Wedding" method="post" asp-route-WeddingId="@wedding.WeddingId" >
+            <button>RSVP</button>
+          </form>
+          }
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>

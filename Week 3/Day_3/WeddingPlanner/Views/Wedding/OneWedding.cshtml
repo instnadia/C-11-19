@@ -1,0 +1,7 @@
+@model Wedding
+
+@Model.WedderOne & @Model.WedderTwo
+
+@foreach(var guest in Model.GuestList){
+  <p>@guest.Guest.FirstName @guest.Guest.LastName</p>
+}
